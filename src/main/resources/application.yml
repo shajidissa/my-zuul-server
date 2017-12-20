@@ -29,5 +29,5 @@ zuul:
   routes:
     organizationservice: /organization/**
     licensingservice: /licensing/**
-    microservice-mysql-simple: /
+    microservice-mysql-simple: /**
     
