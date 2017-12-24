@@ -31,6 +31,8 @@ zuul:
     licensingservice: /licensing/**
     microservice-mysql-simple: /**
     my-patient-microservice: /**
+    authenticationservice: /**
+    
     #microservice-mysql-simple: /microservice-mysql-simple/**
     #my-patient-microservice: /my-patient-microservice/**
     
