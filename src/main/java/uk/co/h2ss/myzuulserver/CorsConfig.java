@@ -34,15 +34,18 @@ public FilterRegistrationBean corsFilter() {
     configAutenticacao.addAllowedMethod("PUT");
     configAutenticacao.addAllowedMethod("OPTIONS");
     configAutenticacao.setMaxAge(3600L);
-    source.registerCorsConfiguration("/oauth/token", configAutenticacao);
-    // source.registerCorsConfiguration("/**", configAutenticacao); // Global for all paths
+    
+    source.registerCorsConfiguration("/**", configAutenticacao); // Global for all paths
     //source.registerCorsConfiguration("*", configAutenticacao); // Global for all paths
     
-    source.registerCorsConfiguration("/api/**", configAutenticacao);
-    source.registerCorsConfiguration("/v2/api-docs", configAutenticacao);
-    source.registerCorsConfiguration("/oauth/**", configAutenticacao);
-    source.registerCorsConfiguration("/*/api/**", configAutenticacao);
-    source.registerCorsConfiguration("/*/oauth/**", configAutenticacao);
+    
+    
+    //source.registerCorsConfiguration("/oauth/token", configAutenticacao);
+    //source.registerCorsConfiguration("/api/**", configAutenticacao);
+    //source.registerCorsConfiguration("/v2/api-docs", configAutenticacao);
+    //source.registerCorsConfiguration("/oauth/**", configAutenticacao);
+    //source.registerCorsConfiguration("/*/api/**", configAutenticacao);
+    //source.registerCorsConfiguration("/*/oauth/**", configAutenticacao);
     
     
     FilterRegistrationBean bean = new FilterRegistrationBean(new CorsFilter(source));
