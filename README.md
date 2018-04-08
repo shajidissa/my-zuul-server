@@ -10,3 +10,7 @@ http://51.141.9.85:5555/api/my-patient-microservice/demo/add?name=hamzah&nhsid=3
 http://51.141.9.85:5555/api/my-patient-microservice/demo/add?name=zainab&nhsid=3455
 
 http://51.141.9.85:5555/api/my-patient-microservice/demo/all
+
+http://51.141.9.85:5555/api/microservice-mysql-simple/swagger-ui.html
+
+http://51.141.9.85:5555/api/my-patient-microservice/swagger-ui.html
